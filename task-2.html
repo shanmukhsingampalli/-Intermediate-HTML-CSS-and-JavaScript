@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TASK_2</title>
+    <link rel="stylesheet" href="task-2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact & To-Do List Form</h1>
+    </header>
+
+    <main>
+      <section id="form">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <button type="submit">Submit</button>
+          <p id="formError" class="error"></p>
+        </form>
+      </section>
+
+      <section id="todo">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="New Task..." />
+        <div style="display: flex; justify-content: center; margin-top: 10px">
+          <button onclick="addTodo()" class="todo-add-task-button">
+            Add Task
+          </button>
+        </div>
+
+        <div id="todo-list"></div>
+      </section>
+    </main>
+  </body>
+  <script src="task-2.js"></script>
+</html>
